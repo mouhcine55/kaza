@@ -1,0 +1,19 @@
+body {
+  box-sizing: border-box;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
+  font-weight: 500;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+

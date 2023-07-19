@@ -1,0 +1,75 @@
+.rental_informations {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rental_host {
+    margin-top: -6px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rental_details {
+    gap: 76px;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 376px) {
+    .rental {
+        margin: 0 20px;
+        min-height: 95vh;
+    }
+    .rental_wrapper {
+        margin-top: -20px;
+    }
+    .rental_host {
+        margin-top: 16px;
+        justify-content: space-between
+    }
+    .rental_details {
+        margin-top: 16.5px;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .rental {
+        margin: 0 20px;
+        min-height: 95vh;
+    }
+    .rental_host {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .rental {
+        max-width: 1240px;
+        margin: 0px 30px 0px 30px;;
+        transform: translateY(-46px);
+    }
+    .rental_host {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .rental_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .rental_details {
+        display: flex;        
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .rental {
+        margin: 0px 50px 0px 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .rental {
+        margin: 0 100px 0 100px;
+    }
+}

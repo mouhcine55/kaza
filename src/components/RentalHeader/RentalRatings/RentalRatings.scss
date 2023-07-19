@@ -1,0 +1,20 @@
+.star {
+    height: 23px;
+    width: 23px;
+}
+    
+.stars {
+    margin-top: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .stars {
+        width: 196px;
+        height: 36px;
+    }
+    .star {
+        height: 30px;
+        margin: 0 7px 0 0;
+        width: 30px;
+    }
+}
