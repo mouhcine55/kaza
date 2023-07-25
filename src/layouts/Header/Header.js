@@ -11,10 +11,10 @@ function Navigation () {
           <img src={Logo} alt="Logo Kasa" className="nav_logo"></img>
         </Link>
         <div className="nav_main">
-          <NavLink activeClassName="active_link" class="active" to="/">
+          <NavLink activeclassname="active_link"  to="/">
             Accueil
           </NavLink>
-          <NavLink activeClassName="active_link" class="active" to="/a-propos"> 
+          <NavLink activeclassname="active_link" to="/a-propos"> 
             A Propos
           </NavLink>
         </div>

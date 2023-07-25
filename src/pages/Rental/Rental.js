@@ -8,13 +8,17 @@ import RentalHost from "../../components/RentalHeader/RentalHost/RentalHost";
 import RentalRatings from "../../components/RentalHeader/RentalRatings/RentalRatings";
 import RentalTags from "../../components/RentalHeader/RentalTags/RentalTags";
 import RentalTitle from "../../components/RentalHeader/RentalTitle/RentalTitle";
+import { useParams } from "react-router-dom";
 
-export default class Rental extends Component {
-	render() {
-		const rentalData = data;
-		const rentalUrlId = window.location.pathname.substr(8);
-		const rental = rentalData.find((item) => item.id === rentalUrlId);
-		if (!rental) return <Erreur />;
+export default function Rental() {
+	const rentalData = data;
+	const {id} = useParams();
+	const rental = rentalData.find((item) => item.id === id);
+
+		if(rental == undefined){
+			return <Erreur />
+		}
+
 		return (
 			<div className="rental">
 				<Carrousel pictures={rental.pictures}></Carrousel>
@@ -33,6 +37,7 @@ export default class Rental extends Component {
 					<Collapse title="Équipements" content={rental.equipments}></Collapse>
 				</div>
 			</div>
-		);
-	}
+		)
 }
+
+	

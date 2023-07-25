@@ -4,16 +4,18 @@ import { ReactComponent as Star } from "./Star.svg";
 
 export default class RentalRatings extends Component {
 	render() {
-		const ratingScale = [1, 2, 3, 4, 5];
+		
+		const stars = new Array(5).fill(false)
+
+		for(let i=0; i<this.props.ratings; i++){
+			stars[i]=true;
+		}
 
 		return (
 			<div className="stars">
-				{ratingScale.map((n) => (
-					<Star
-						fill={n <= this.props.ratings ? "#ff6060" : "#f7f7f7"}
-						key={`star-${n}`}
-						className="star"
-					></Star>
+				{stars.map((n,index) => (
+				
+					<i key={index} className={n  ? "fa-solid fa-star star orange" : "fa-solid fa-star star gris"}></i>
 				))}
 			</div>
 		);
