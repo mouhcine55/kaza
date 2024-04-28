@@ -15,7 +15,7 @@ export default function Rental() {
 	const {id} = useParams();
 	const rental = rentalData.find((item) => item.id === id);
 
-		if(rental == undefined){
+		if(rental === undefined){
 			return <Erreur />
 		}
 
